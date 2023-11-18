@@ -8,56 +8,39 @@ Archivos usados en el Club de Ciencia 2024
 
 - Apertura (No hay clases)
 
-### Semana 1 - Dia 1
+### Dia 1
 
 - Primeros pasos con Python [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/espnet/notebook/blob/master/espnet2_streaming_asr_demo.ipynb)
-
-### Semana 1 - Dia 2
-
 - Python: Clases
 
-### Semana 1 - Dia 3
+### Dia 2
 
 - Python para Aprendizaje Automatico: NumPy y Matplolib
+- Herramientas ML: HuggingFace
 - Introduccion a la Inteligencia Artificial
 - Conceptos Básicos del Aprendizaje Automático
-
-### Semana 1 - Dia 4
-
-- Herramientas ML: HuggingFace
 - Conceptos Básicos de la Procesamiento de Audio usando Aprendizaje Automático
 - De texto a dominio en frecuencia
 - Sintetizacion de Audio
 
-### Semana 1 - Dia 5
+### Dia 3
 
-- Herramientas ML: HuggingFace
+- Herramientas ML: HuggingFace y Datasets
 - Sintetizacion de Audio: Vocoders
-
-### Semana 2 - Dia 6
-
-- Herramientas ML: Datasets
 - Sintetizacion de Audio usando difusion
 
 *Charla MEXT
 
-### Semana 2 - Dia 7
+### Dia 4
 
 - Herramientas ML: MLFlow
-- Sintetizacion de Audio usando tokens discretos
-
-### Semana 2 - Dia 8
-
 - HuggingFace: Modelos de lenguaje grandes
+- Sintetizacion de Audio usando tokens discretos
 - Sintetizacion de Audio y LLM
 
-### Semana 2 - Dia 9
+### Dia 5
 
 - Sintetizacion de Audio usando Mensajes (Prompts)
-
-### Semana 2 - Dia 10
-
-- Sintetizacion de Audio usando Mensajes (Prompts) (2)
 
 ### Clausura
 
