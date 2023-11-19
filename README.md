@@ -34,13 +34,13 @@ Archivos usados en el Club de Ciencia 2024
 ### Dia 4
 
 - Herramientas ML: MLFlow
-- HuggingFace: Modelos de lenguaje grandes
+- HuggingFace: Modelos de lenguaje grandes (LLM)
 - Sintetizacion de Audio usando tokens discretos
-- Sintetizacion de Audio y LLM
+- Conversores de Voz
 
 ### Dia 5
 
-- Sintetizacion de Audio usando Mensajes (Prompts)
+- Sintetizacion de Audio usando Mensajes (Prompts) y LLMs
 
 ### Clausura
 
