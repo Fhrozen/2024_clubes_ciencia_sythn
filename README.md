@@ -21,26 +21,32 @@ Archivos usados en el Club de Ciencia 2024
 - Conceptos Básicos del Aprendizaje Automático
 - Conceptos Básicos de la Procesamiento de Audio usando Aprendizaje Automático
 - De texto a dominio en frecuencia
-- Sintetizacion de Audio
+- Sintetización de Audio
 
 ### Dia 3
 
 - Herramientas ML: HuggingFace y Datasets
-- Sintetizacion de Audio: Vocoders
-- Sintetizacion de Audio usando difusion
+- Sintetización de Audio: Vocoders
+- Sintetización de Audio usando difusión
 
 *Charla MEXT
 
 ### Dia 4
 
+- Herramientas ML: Diffusers y Transformers
 - Herramientas ML: MLFlow
 - HuggingFace: Modelos de lenguaje grandes (LLM)
-- Sintetizacion de Audio usando tokens discretos
-- Conversores de Voz
+- Sintetización de Audio usando tokens discretos
+- Convertidores de Voz
 
 ### Dia 5
 
-- Sintetizacion de Audio usando Mensajes (Prompts) y LLMs
+- HuggingFace: Modelos de cambio de Voz
+- HuggingFace: Modelos de sintetización de Voz
+- HuggingFace: Modelos de sintetización de Música
+- HuggingFace: Modelos de sintetización de Audio usando Mensajes (Prompts)
+- Sintetización de Audio usando Mensajes (Prompts) y LLMs
+- Todo lo que necesitas es atención
 
 ### Clausura
 
