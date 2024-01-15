@@ -10,16 +10,22 @@ Archivos usados en el Club de Ciencia 2024
 
 ### Dia 1
 
-- Primeros pasos con Python [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/espnet/notebook/blob/master/espnet2_streaming_asr_demo.ipynb)
-- Python: Clases
+- Primeros pasos con Python [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_1/01_python.ipynb)
+- Python: Clases y Librerias [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_1/02_classes_libs.ipynb)
+
+Teoria:
+
+- Introduccion a la Inteligencia Artificial
+- Conceptos Básicos del Aprendizaje Automático
+- Conceptos Básicos de la Procesamiento de Audio usando Aprendizaje Automático
 
 ### Dia 2
 
 - Python para Aprendizaje Automatico: NumPy y Matplolib
 - Herramientas ML: HuggingFace
-- Introduccion a la Inteligencia Artificial
-- Conceptos Básicos del Aprendizaje Automático
-- Conceptos Básicos de la Procesamiento de Audio usando Aprendizaje Automático
+
+Teoria:
+
 - De texto a dominio en frecuencia
 - Sintetización de Audio
 
@@ -36,6 +42,9 @@ Archivos usados en el Club de Ciencia 2024
 - Herramientas ML: Diffusers y Transformers
 - Herramientas ML: MLFlow
 - HuggingFace: Modelos de lenguaje grandes (LLM)
+
+Teoria:
+
 - Sintetización de Audio usando tokens discretos
 - Convertidores de Voz
 
@@ -45,6 +54,9 @@ Archivos usados en el Club de Ciencia 2024
 - HuggingFace: Modelos de sintetización de Voz
 - HuggingFace: Modelos de sintetización de Música
 - HuggingFace: Modelos de sintetización de Audio usando Mensajes (Prompts)
+
+Teoria:
+
 - Sintetización de Audio usando Mensajes (Prompts) y LLMs
 - Todo lo que necesitas es atención
 
