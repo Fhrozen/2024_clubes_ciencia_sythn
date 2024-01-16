@@ -21,8 +21,9 @@ Teoria:
 
 ### Dia 2
 
-- Python para Aprendizaje Automatico: NumPy y Matplolib
-- Herramientas ML: HuggingFace
+- Python para Aprendizaje Automatico: NumPy y Matplolib [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_2/01_AudioProcess.ipynb)
+- Herramientas ML: HuggingFace y Datasets [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_2/02_HF_DS.ipynb)
+- Refinamiento de T5 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_2/03_Refinar_T5.ipynb)
 
 Teoria:
 
