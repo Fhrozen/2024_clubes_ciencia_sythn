@@ -1,3 +1,9 @@
-jupyter
-notebook
 scikit-learn
+transformers
+peft
+datasets
+tokenizers
+huggingface_hub
+librosa
+soundfile
+diffusers

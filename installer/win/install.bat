@@ -31,7 +31,9 @@ start /wait "" cmd /c conda update -y conda
 start /wait "" cmd /c conda install -y python=%PYTHON_VERSION%
 start /wait "" cmd /c conda install -y numpy
 start /wait "" cmd /c conda install -y matplotlib
+start /wait "" cmd /c conda install -y jupyterlab
 start /wait "" cmd /c conda clean -f -y
+start /wait "" cmd /c conda install -y pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 start /wait "" cmd /c pip install -r ..\requirements.txt
 if !errorlevel! neq 0 exit /b !errorlevel!
 echo.>venv.done
