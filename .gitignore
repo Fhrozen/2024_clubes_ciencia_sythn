@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 installer/**/Miniconda3*
 installer/activate_python.sh
+dia_*/custom_*
