@@ -32,9 +32,9 @@ Teoria:
 
 ### Dia 3
 
-- Herramientas ML: HuggingFace y Datasets
-- Sintetización de Audio: Vocoders
-- Sintetización de Audio usando difusión
+- TTS Convencional [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_3/01_TTS_conventional.ipynb)
+- Conversor de Voz [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_3/02_VoiceChanger.ipynb)
+- Vocoder Discreto [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_3/03_Vocoder_Discrete.ipynb)
 
 *Charla MEXT
 
