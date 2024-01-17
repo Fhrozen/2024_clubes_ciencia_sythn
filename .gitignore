@@ -163,3 +163,4 @@ installer/activate_python.sh
 dia_*/custom_*
 models*
 generated*
+data*
