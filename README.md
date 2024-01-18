@@ -40,9 +40,8 @@ Teoria:
 
 ### Dia 4
 
-- Herramientas ML: Diffusers y Transformers
-- Herramientas ML: MLFlow
-- HuggingFace: Modelos de lenguaje grandes (LLM)
+- MusicGen [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_4/01_MusicGen.ipynb)
+- Bark: Sintetizacion de voz usando guias de texto. [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_4/02_TTS_Discrete.ipynb)
 
 Teoria:
 
