@@ -161,6 +161,7 @@ cython_debug/
 installer/**/Miniconda3*
 installer/activate_python.sh
 dia_*/custom_*
+dia_*/fairseq-*
 models*
 generated*
 data*
