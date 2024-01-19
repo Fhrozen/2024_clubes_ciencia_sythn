@@ -23,7 +23,6 @@ Teoria:
 
 - Python para Aprendizaje Automatico: NumPy y Matplolib [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_2/01_AudioProcess.ipynb)
 - Herramientas ML: HuggingFace y Datasets [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_2/02_HF_DS.ipynb)
-- Refinamiento de T5 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_2/03_Refinar_T5.ipynb)
 
 Teoria:
 
@@ -34,9 +33,6 @@ Teoria:
 
 - TTS Convencional [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_3/01_TTS_conventional.ipynb)
 - Conversor de Voz [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_3/02_VoiceChanger.ipynb)
-- Vocoder Discreto [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_3/03_Vocoder_Discrete.ipynb)
-
-*Charla MEXT
 
 ### Dia 4
 
@@ -50,14 +46,12 @@ Teoria:
 
 ### Dia 5
 
-- HuggingFace: Modelos de cambio de Voz
-- HuggingFace: Modelos de sintetización de Voz
-- HuggingFace: Modelos de sintetización de Música
-- HuggingFace: Modelos de sintetización de Audio usando Mensajes (Prompts)
+- Vocoder Discreto [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_5/01_Vocoder_Discrete.ipynb)
+- SpeechGPT [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_5/02_SpeechGPT.ipynb)
+- Refinamiento de T5 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Fhrozen/2024_clubes_ciencia_sythn/blob/main/dia_5/03_Refinar_T5.ipynb)
 
 Teoria:
 
-- Sintetización de Audio usando Mensajes (Prompts) y LLMs
 - Todo lo que necesitas es atención
 
 ### Clausura
