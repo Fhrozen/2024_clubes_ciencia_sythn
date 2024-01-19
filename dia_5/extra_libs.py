@@ -217,17 +217,17 @@ class SpeechGPTInference:
         self.meta_instruction = META_INSTRUCTION
         self.template= "[Human]: {question} <eoh>. [SpeechGPT]: "
 
-
         #speech2unit
         self.s2u = Speech2Unit(ckpt_dir=s2u_dir)
-        
+
         #model
         self.model = LlamaForCausalLM.from_pretrained(
             model_name_or_path,
+            # load_in_4bit=True,
             load_in_8bit=False,
             torch_dtype=torch.float16,
             device_map="auto",
-            )
+        )
 
         if lora_weights is not None:
             self.model = PeftModel.from_pretrained(
@@ -248,7 +248,6 @@ class SpeechGPTInference:
             model_name_or_path)
         self.tokenizer.pad_token_id = (0)
         self.tokenizer.padding_side = "left" 
-
 
         #generation
         self.generate_kwargs = DEFAULT_GEN_PARAMS
@@ -371,7 +370,7 @@ class SpeechGPTInference:
                     # print(f"Speech repsonse is saved in {self.output_dir}/wav/answer_{init_num+i}.wav")
             # print(f"Response json is saved in {self.output_dir}/responses.json")
 
-        return 16000, np.hstack(wavs)
+        return 16000, wavs
 
     def dump_wav(self, sample_id, pred_wav, prefix):
         sf.write(
