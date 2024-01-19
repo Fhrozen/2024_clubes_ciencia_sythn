@@ -162,6 +162,7 @@ installer/**/Miniconda3*
 installer/activate_python.sh
 dia_*/custom_*
 dia_*/fairseq-*
+dia_*/*.wav
 models*
 generated*
 data*

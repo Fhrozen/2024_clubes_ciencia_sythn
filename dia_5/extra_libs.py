@@ -70,7 +70,7 @@ class FeatureReader(object):
         self.fp16 = fp16
         if fp16:
             self.model.half()
-        
+        self.device = device
         self.layer_shift = 0
         self.target_sample_hz = sampling_rate
         
@@ -80,6 +80,8 @@ class FeatureReader(object):
         wav, sr = torchaudio.load(path)
         if sr != self.target_sample_hz:
             wav = resample(wav, sr, self.target_sample_hz)
+            # for multichannel audio:
+            wav = wav.mean(0, keepdim=True)
         return wav
 
     @torch.no_grad()
@@ -87,9 +89,9 @@ class FeatureReader(object):
         x = waveform
         with torch.no_grad():
             if self.fp16:
-                x = x.half().cuda()
+                x = x.half().to(self.device)
             else:
-                x = x.float().cuda()
+                x = x.float().to(self.device)
             if self.task.cfg.normalize:
                 x = F.layer_norm(x, x.shape)
             x = x.view(1, -1)
@@ -181,11 +183,9 @@ class Speech2Unit(torch.nn.Module):
                 duration_list.append(count)
                 count = 1
         return dup_cluster_list, duration_list
-    
 
     def __call__(self, path, merged=True):
         waveform = self.feature_reader.read_audio(path).to(self.device)
-        
         feat = self.feature_reader.get_feats(waveform)
         cluster_ids = self.apply_kmeans(feat).tolist()
         dup_cluster_list, duration_list = self.merge_duplicates(cluster_ids)
@@ -252,7 +252,6 @@ class SpeechGPTInference:
         #generation
         self.generate_kwargs = DEFAULT_GEN_PARAMS
 
-
         #vocoder
         vocoder = os.path.join(vocoder_dir, "vocoder.pt")
         vocoder_cfg = os.path.join(vocoder_dir, "config.json")
@@ -261,7 +260,6 @@ class SpeechGPTInference:
         self.vocoder = CodeHiFiGANVocoder(vocoder, vocoder_cfg).to(device)
 
         self.output_dir = output_dir
-
 
     def preprocess(
         self,
@@ -277,7 +275,6 @@ class SpeechGPTInference:
 
         prompt_seq = self.meta_instruction + self.template.format(question=processed_text)
         return prompt_seq
-
 
     def postprocess(
         self,
@@ -300,7 +297,6 @@ class SpeechGPTInference:
         ua = extract_text_between_tags(response + '<eoa>', tag1="[ua]", tag2="<eoa>") if "[ua]" in response else ''
 
         return {"question":question, "answer":answer, "textQuestion":tq, "textAnswer":ta, "unitAnswer":ua}
-
 
     def forward(
         self, 
@@ -369,7 +365,8 @@ class SpeechGPTInference:
                     # self.dump_wav(init_num+i, wav, prefix="answer")
                     # print(f"Speech repsonse is saved in {self.output_dir}/wav/answer_{init_num+i}.wav")
             # print(f"Response json is saved in {self.output_dir}/responses.json")
-
+            if len(wavs) > 0:
+                wavs = np.hstack(wavs)
         return 16000, wavs
 
     def dump_wav(self, sample_id, pred_wav, prefix):
@@ -382,7 +379,6 @@ class SpeechGPTInference:
     def __call__(self, input):
         return self.forward(input)
 
-    
     def interact(self):
         prompt = str(input(f"Please talk with {NAME}:\n"))
         while prompt != "quit":
